@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnu3k2afvvs7"]
+
+[ext_resource type="Script" uid="uid://yvg11p0ul3d7" path="res://Scripts/player.gd" id="1_vy03r"]
+[ext_resource type="Texture2D" uid="uid://fhnbp2my2muk" path="res://Assets/funguy_character.png" id="2_vy03r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34b25"]
+size = Vector2(431.63342, 716.66516)
+
+[sub_resource type="TileSet" id="TileSet_34b25"]
+
+[node name="GameJamGame" type="Node2D"]
+position = Vector2(1, 0)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_vy03r")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(-16.5, -16.65626)
+scale = Vector2(0.03256936, 0.02897779)
+texture = ExtResource("2_vy03r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Sprite2D"]
+position = Vector2(28.169952, 84.78458)
+shape = SubResource("RectangleShape2D_34b25")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-14, -46)
+scale = Vector2(1.3980583, 1.4833839)
+zoom = Vector2(4, 4)
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-14, -46)
+scale = Vector2(1.3980583, 1.4833839)
+tile_set = SubResource("TileSet_34b25")
+format = 2
