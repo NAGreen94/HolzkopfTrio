@@ -152,7 +152,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_Animation",
-"speed": 6.0
+"speed": 9.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v0iea"]
@@ -160,13 +160,14 @@ radius = 4.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_cvnsp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -8)
 scale = Vector2(0.063, 0.063)
 sprite_frames = SubResource("SpriteFrames_sweqy")
-animation = &"jump_tmp"
+animation = &"run_Animation"
 autoplay = "idle_Animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
