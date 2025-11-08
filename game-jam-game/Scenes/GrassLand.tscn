@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://crm5jskfmkul0"]
+[gd_scene load_steps=13 format=3 uid="uid://crm5jskfmkul0"]
 
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="1_dhmnf"]
 [ext_resource type="Texture2D" uid="uid://rvvdu1su6lb0" path="res://Assets/Cave/forest_assets.png" id="2_mhtjr"]
 [ext_resource type="PackedScene" uid="uid://dttdug71tmgod" path="res://Scenes/playerWithSpring.tscn" id="3_bjolv"]
 [ext_resource type="Texture2D" uid="uid://dcl6gxmfkcs6y" path="res://Assets/Cave/tree_asset.png" id="3_mhtjr"]
 [ext_resource type="Texture2D" uid="uid://douphhhfm63xr" path="res://Assets/Cave/Backgrounds/Night/1.png" id="4_bjolv"]
+[ext_resource type="PackedScene" uid="uid://cfq36nm0hbpe1" path="res://Scenes/spring.tscn" id="6_webea"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0wf4"]
 texture = ExtResource("1_dhmnf")
@@ -2956,6 +2957,7 @@ layer_4/tile_data = PackedInt32Array(-131072, 4194305, 0, -65536, 4194305, 1, 0,
 position = Vector2(8.999998, -15.999998)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerWithSpring"]
+position = Vector2(-0.79999983, -12)
 limit_left = -400
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -2964,3 +2966,11 @@ rotation = 1.5690019
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_mhtjr")
+
+[node name="Spring" parent="." instance=ExtResource("6_webea")]
+position = Vector2(1182, 86)
+scale = Vector2(0.55064124, 0.6255286)
+
+[node name="Spring2" parent="." instance=ExtResource("6_webea")]
+position = Vector2(2849, -88.00001)
+scale = Vector2(0.5664983, 0.78765744)
