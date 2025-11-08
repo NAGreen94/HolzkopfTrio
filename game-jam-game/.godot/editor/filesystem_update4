@@ -1,5 +1,10 @@
+res://Scenes/playerWithSpring.tscn
+res://Scripts/player.gd
 res://Scenes/NewCave.tscn
-res://area_2d.gd
-res://Scenes/Coin.tscn
+res://Scripts/player_charge.gd
+res://Scenes/Gras.tscn
+res://Scenes/Pine.tscn
 res://Scenes/player.tscn
+res://Scenes/game_jam_game.tscn
 res://Scenes/spring.tscn
+res://Scenes/Coin.tscn
