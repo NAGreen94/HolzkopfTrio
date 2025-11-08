@@ -1,11 +1,133 @@
-[gd_scene load_steps=7 format=3 uid="uid://cnu3k2afvvs7"]
+[gd_scene load_steps=15 format=3 uid="uid://cnu3k2afvvs7"]
 
 [ext_resource type="Script" uid="uid://yvg11p0ul3d7" path="res://Scripts/player.gd" id="1_o5aoa"]
 [ext_resource type="Texture2D" uid="uid://fhnbp2my2muk" path="res://Assets/funguy_character.png" id="2_2lplo"]
+[ext_resource type="Texture2D" uid="uid://c2eg7rea4fdlw" path="res://Assets/idle_animation_new.png" id="3_5uxqc"]
 [ext_resource type="Texture2D" uid="uid://dhynfy5kdsvff" path="res://Assets/props1.png" id="3_a7v8d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_34b25"]
 size = Vector2(431.63342, 716.66516)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6wpm"]
+atlas = ExtResource("3_5uxqc")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbqbe"]
+atlas = ExtResource("3_5uxqc")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1bmx"]
+atlas = ExtResource("3_5uxqc")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15fpl"]
+atlas = ExtResource("3_5uxqc")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfanh"]
+atlas = ExtResource("3_5uxqc")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lpkki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6wpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbqbe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15fpl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfanh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1bmx")
+}],
+"loop": true,
+"name": &"idle new",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7v8d"]
+size = Vector2(99.34328, 170.66672)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a7v8d"]
 texture = ExtResource("3_a7v8d")
@@ -249,6 +371,7 @@ texture = ExtResource("3_a7v8d")
 22:9/0 = 0
 23:9/0 = 0
 24:9/0 = 0
+24:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 25:9/0 = 0
 26:9/0 = 0
 27:9/0 = 0
@@ -2330,7 +2453,7 @@ texture = ExtResource("3_a7v8d")
 62:79/0 = 0
 1:11/size_in_atlas = Vector2i(9, 1)
 1:11/0 = 0
-1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-56, -8, 60, -8, 56, 8, -56, 8)
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-76, -8, 72, -8, 72, 8, -72, 8)
 2:12/size_in_atlas = Vector2i(7, 1)
 2:12/0 = 0
 2:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-56, -8, 60, -8, 56, 8, -56, 8)
@@ -2355,14 +2478,28 @@ position = Vector2(1, 0)
 script = ExtResource("1_o5aoa")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
+visible = false
 position = Vector2(-16.5, -16.65626)
 scale = Vector2(0.03256936, 0.02897779)
 texture = ExtResource("2_2lplo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
 position = Vector2(-15.582522, -14.199389)
 scale = Vector2(0.03256936, 0.02897779)
 shape = SubResource("RectangleShape2D_34b25")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(-14.000011, -15.000002)
+scale = Vector2(0.13085938, 0.111328095)
+sprite_frames = SubResource("SpriteFrames_lpkki")
+animation = &"idle new"
+autoplay = "idle new"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player"]
+position = Vector2(-14, -11)
+scale = Vector2(0.13085933, 0.11132807)
+shape = SubResource("RectangleShape2D_a7v8d")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-14, -46)
@@ -2370,9 +2507,8 @@ scale = Vector2(1.3980583, 1.4833839)
 zoom = Vector2(3, 3)
 
 [node name="TileMap2" type="TileMap" parent="."]
-position = Vector2(2, 0)
+position = Vector2(-1, 0)
 scale = Vector2(1.0000001, 1.0000001)
 tile_set = SubResource("TileSet_5uxqc")
-collision_visibility_mode = 1
 format = 2
-layer_0/tile_data = PackedInt32Array(65535, 65536, 11, 131071, 131072, 12, 196607, 196608, 13)
+layer_0/tile_data = PackedInt32Array(65535, 65536, 11, 131071, 131072, 12, 196607, 196608, 13, 4, 720896, 11, 5, 786432, 11, 6, 851968, 11, 7, 917504, 11, 8, 983040, 11, 9, 1048576, 11, 10, 1114112, 11, 11, 1179648, 11, 12, 1441792, 11, 13, 1507328, 11, 14, 1572864, 11, 15, 1638400, 11, 16, 1703936, 11, 17, 1769472, 11, 18, 1900544, 11, 19, 1966080, 11, 20, 2031616, 11, 21, 2097152, 11, 22, 2162688, 11, 23, 2228224, 11, 24, 2293760, 11, 25, 2359296, 11, 26, 2424832, 11, 27, 2490368, 11, 28, 2555904, 11, 65554, 1245184, 12, 65555, 1966080, 12, 65556, 2031616, 12, 65557, 2097152, 12, 65558, 2162688, 12, 65559, 2228224, 12, 65560, 2293760, 12, 65561, 2359296, 12, 65562, 2424832, 12, 65563, 2490368, 12, 131095, 1507328, 12, 131096, 1572864, 12, 131097, 1638400, 12, 131098, 1703936, 12, 131099, 1769472, 12, 131087, 786432, 12, 131088, 851968, 12, 131089, 917504, 12, 131090, 983040, 12, 131091, 1048576, 12, 131092, 1114112, 12, 131093, 1179648, 12, 131094, 1245184, 12, 65547, 786432, 12, 65548, 851968, 12, 65549, 917504, 12, 65550, 983040, 12, 65551, 1048576, 12, 65552, 1114112, 12, 65553, 1179648, 12, 65543, 131072, 12, 131084, 131072, 12, 131078, 131072, 12, 65539, 393216, 16, 131074, 393216, 16, 131075, 393216, 16, 65538, 393216, 16, 131068, 393216, 16, 196604, 393216, 16, 65526, 65536, 11)
