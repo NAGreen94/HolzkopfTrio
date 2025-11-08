@@ -1,64 +1,65 @@
-[gd_scene load_steps=18 format=3 uid="uid://bsv5yydv5swcw"]
+[gd_scene load_steps=19 format=3 uid="uid://bsv5yydv5swcw"]
 
-[ext_resource type="Texture2D" uid="uid://bsu1dwh037868" path="res://Assets/Forest/Frog - 14F.png" id="1_85unm"]
+[ext_resource type="Script" uid="uid://debmy4w56hu1u" path="res://Scenes/frog.gd" id="1_evecu"]
+[ext_resource type="Texture2D" uid="uid://bsu1dwh037868" path="res://Assets/Forest/Frog - 14F.png" id="1_qcssi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8tk8e"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(0, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_icobh"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(27, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ao1so"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(54, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jdy3o"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(81, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xo73c"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(108, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x10cb"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(135, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4m50l"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(162, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mu25f"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(189, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e1yso"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(216, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ppbqp"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(243, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxu3t"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(270, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_anc2d"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(297, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lux35"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(324, 0, 27, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u8tiw"]
-atlas = ExtResource("1_85unm")
+atlas = ExtResource("1_qcssi")
 region = Rect2(351, 0, 27, 20)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_4ygq6"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_evecu"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -108,19 +109,19 @@ animations = [{
 "speed": 9.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_c3muq"]
-radius = 8.357147
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2kjn"]
+radius = 5.142854
 
-[node name="Frog" type="Node2D"]
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_evecu")
 
-[node name="Frog" type="AnimatableBody2D" parent="."]
-position = Vector2(86.375, -2)
-scale = Vector2(0.19444457, 0.2)
+[node name="Frog animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.4285624, -9)
+scale = Vector2(1.1428565, 1)
+sprite_frames = SubResource("SpriteFrames_evecu")
 
-[node name="Frog animation" type="AnimatedSprite2D" parent="Frog"]
-scale = Vector2(1.0000001, 1)
-sprite_frames = SubResource("SpriteFrames_4ygq6")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.42856243, -9)
+shape = SubResource("CircleShape2D_b2kjn")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Frog"]
-position = Vector2(-1.9285703, 0)
-shape = SubResource("CircleShape2D_c3muq")
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
