@@ -3033,11 +3033,7 @@ distance = 0.5832067
 position = Vector2(2, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_a7v8d")]
-position = Vector2(-1, -1)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(6, 6)
-limit_bottom = 110
+position = Vector2(-3.5131226, -11.088348)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 0)

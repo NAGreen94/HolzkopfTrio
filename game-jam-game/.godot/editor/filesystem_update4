@@ -1,1 +1,4 @@
+res://Scenes/player_with_charge.tscn
+res://Scripts/player_with_charge.gd
 res://Scenes/game_jam_game.tscn
+res://Scenes/player.tscn
