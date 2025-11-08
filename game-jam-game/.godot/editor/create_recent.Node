@@ -1,10 +1,9 @@
+CollisionShape2D
+StaticBody2D
+Camera2D
+TileMap
 Sprite2D
 Area2D
-CollisionShape2D
+AnimatableBody2D
 AnimatedSprite2D
 CharacterBody2D
-RayCast2D
-AnimatableBody2D
-StaticBody2D
-TileMap
-Camera2D
