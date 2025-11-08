@@ -3032,8 +3032,13 @@ distance = 0.5832067
 [node name="GameJamGame" type="Node2D"]
 position = Vector2(2, 0)
 
+<<<<<<< HEAD
 [node name="Player" parent="." instance=ExtResource("1_a7v8d")]
 position = Vector2(-1, -1)
+=======
+[node name="Player" parent="." instance=ExtResource("1_3m8g2")]
+position = Vector2(-1, 0)
+>>>>>>> main
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(6, 6)

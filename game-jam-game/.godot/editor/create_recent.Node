@@ -1,6 +1,8 @@
-Camera2D
-CollisionShape2D
 AnimatedSprite2D
+AnimatableBody2D
+StaticBody2D
+CollisionShape2D
 TileMap
+Camera2D
 Sprite2D
 CharacterBody2D
