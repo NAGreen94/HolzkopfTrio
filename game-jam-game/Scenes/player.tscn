@@ -152,7 +152,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_Animation",
-"speed": 6.0
+"speed": 9.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v0iea"]
@@ -166,7 +166,7 @@ script = ExtResource("1_cvnsp")
 position = Vector2(-1, -8)
 scale = Vector2(0.063, 0.063)
 sprite_frames = SubResource("SpriteFrames_sweqy")
-animation = &"jump_tmp"
+animation = &"run_Animation"
 autoplay = "idle_Animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
