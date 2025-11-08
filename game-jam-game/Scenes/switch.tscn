@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b84v2om3obmme"]
+
+[ext_resource type="Script" uid="uid://dt4g7d86k4juk" path="res://switch.gd" id="1_swbo4"]
+[ext_resource type="Texture2D" uid="uid://difqy0metuk1o" path="res://icon.svg" id="2_v71cw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_og4gy"]
+radius = 59.03389
+
+[node name="Switch" type="Area2D"]
+script = ExtResource("1_swbo4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.9999981, 0.5000019)
+scale = Vector2(0.984375, 1.0078125)
+texture = ExtResource("2_v71cw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_og4gy")
