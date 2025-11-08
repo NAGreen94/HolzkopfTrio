@@ -1,14 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dsto4t458j2ht"]
+[gd_scene load_steps=10 format=3 uid="uid://dsto4t458j2ht"]
 
-[ext_resource type="PackedScene" uid="uid://dfqk1j0rn3y7b" path="res://Scenes/player.tscn" id="1_2v5kr"]
 [ext_resource type="Texture2D" uid="uid://bb7e7ixmlqq8o" path="res://Assets/mainlev_build.png" id="1_w6fag"]
 [ext_resource type="Texture2D" uid="uid://b2ckonodde4vw" path="res://Assets/Forest/Enviroment.png" id="2_e7a42"]
-[ext_resource type="PackedScene" uid="uid://cfgf66bnlk83x" path="res://Scenes/killzone.tscn" id="2_mnr5i"]
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="3_2v5kr"]
 [ext_resource type="PackedScene" uid="uid://585hunlg4kry" path="res://Scenes/Coin.tscn" id="6_mnr5i"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dfs8i"]
-distance = 0.5832067
+[ext_resource type="PackedScene" uid="uid://dttdug71tmgod" path="res://Scenes/playerWithSpring.tscn" id="7_dfs8i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mnr5i"]
 texture = ExtResource("1_w6fag")
@@ -4147,20 +4143,6 @@ sources/2 = SubResource("TileSetAtlasSource_804u2")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_2v5kr")]
-position = Vector2(57, -19)
-scale = Vector2(9.319998, 9)
-
-[node name="killzone" parent="Player" instance=ExtResource("2_mnr5i")]
-position = Vector2(102, 163)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/killzone"]
-shape = SubResource("WorldBoundaryShape2D_dfs8i")
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-1.7167382, -8.444445)
-limit_bottom = 110
-
 [node name="TileMap" type="TileMap" parent="."]
 physics_interpolation_mode = 2
 position = Vector2(1.1920929e-07, 2.3841858e-07)
@@ -4180,3 +4162,11 @@ position = Vector2(223.99998, -12)
 
 [node name="Coin2" parent="." instance=ExtResource("6_mnr5i")]
 position = Vector2(311, -12)
+
+[node name="PlayerWithSpring" parent="." instance=ExtResource("7_dfs8i")]
+position = Vector2(68, -23)
+scale = Vector2(9, 9)
+
+[node name="Camera2D2" type="Camera2D" parent="PlayerWithSpring"]
+position = Vector2(-0.8888887, -21.444445)
+scale = Vector2(0.21709579, 0.096239075)
