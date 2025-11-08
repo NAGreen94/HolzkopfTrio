@@ -1,0 +1,11 @@
+res://Scenes/Coin.tscn
+res://area_2d.gd
+res://Scenes/coin.gd
+res://Cooin.tscn
+res://Scenes/Frog.tscn
+res://Scenes/frog.gd
+res://Scripts/animatable_body_2d.gd
+res://Scripts/coin.gd
+res://Scripts/coin_animation.gd
+res://Scenes/game_jam_game.tscn
+res://Scenes/NewCave.tscn
