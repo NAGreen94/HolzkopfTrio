@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfq36nm0hbpe1"]
+
+[ext_resource type="Script" uid="uid://dh7tw0u6ojp4j" path="res://area_2d.gd" id="1_nv7ci"]
+
+[node name="Spring" type="Area2D"]
+position = Vector2(2, 0)
+script = ExtResource("1_nv7ci")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

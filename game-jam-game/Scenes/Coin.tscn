@@ -175,7 +175,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_xlm8l"]
 radius = 2.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Coin" type="Area2D"]
+scale = Vector2(5, 5)
 script = ExtResource("1_tq4fj")
 
 [node name="Coin animation" type="AnimatedSprite2D" parent="."]
