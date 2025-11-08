@@ -1,4 +1,4 @@
-[gd_scene load_steps=171 format=3 uid="uid://cnu3k2afvvs7"]
+[gd_scene load_steps=173 format=3 uid="uid://cnu3k2afvvs7"]
 
 [ext_resource type="PackedScene" uid="uid://dfqk1j0rn3y7b" path="res://Scenes/player.tscn" id="1_3m8g2"]
 [ext_resource type="Texture2D" uid="uid://bb7e7ixmlqq8o" path="res://Assets/mainlev_build.png" id="2_o5aoa"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b5c2day46enxa" path="res://Assets/Forest/Coin - 32x32 - 9F.png" id="4_a7v8d"]
 [ext_resource type="Texture2D" uid="uid://chde25tbr0mxp" path="res://Assets/Forest/Bush - 60F.png" id="5_khxen"]
 [ext_resource type="Texture2D" uid="uid://bsu1dwh037868" path="res://Assets/Forest/Frog - 14F.png" id="7_atxn2"]
+[ext_resource type="PackedScene" uid="uid://cfgf66bnlk83x" path="res://Scenes/killzone.tscn" id="8_atxn2"]
 [ext_resource type="Texture2D" uid="uid://bhecxxquxuulp" path="res://Assets/Forest/Pine II - 60F.png" id="8_j6wpm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ho1tp"]
@@ -4149,6 +4150,9 @@ animations = [{
 "speed": 9.0
 }]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j6wpm"]
+distance = 0.5832067
+
 [node name="GameJamGame" type="Node2D"]
 position = Vector2(1, 0)
 
@@ -4165,6 +4169,7 @@ position = Vector2(-1, 0)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -23)
 zoom = Vector2(6, 6)
+limit_bottom = 110
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 0)
@@ -4196,3 +4201,9 @@ scale = Vector2(0.50347227, 0.5207032)
 sprite_frames = SubResource("SpriteFrames_swvqe")
 autoplay = "default"
 frame_progress = 0.16930035
+
+[node name="killzone" parent="." instance=ExtResource("8_atxn2")]
+position = Vector2(102, 163)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+shape = SubResource("WorldBoundaryShape2D_j6wpm")
