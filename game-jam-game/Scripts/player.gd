@@ -8,7 +8,7 @@ const JUMP_VELOCITY = -300.0
 const GRAVITY = 980.0 
 
 # Neue Konstanten für den aufladbaren Sprung
-const MAX_CHARGE_TIME = 1.0 # Maximale Aufladezeit in Sekunden
+const MAX_CHARGE_TIME = 0.01 # Maximale Aufladezeit in Sekunden
 const MAX_JUMP_BOOST = -350.0 # Zusätzliche maximale negative Y-Geschwindigkeit (höherer Sprung)
 const MIN_JUMP_VELOCITY = -50.0 # Minimale Sprunggeschwindigkeit bei kurzem Tippen
 

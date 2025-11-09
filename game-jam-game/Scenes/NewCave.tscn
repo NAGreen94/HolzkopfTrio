@@ -4178,5 +4178,5 @@ position = Vector2(377, -32)
 scale = Vector2(2.4899118, 2.7614589)
 
 [node name="SpringWithPickup" parent="." instance=ExtResource("8_804u2")]
-position = Vector2(-166.00002, -69.00001)
-scale = Vector2(0.5151515, 0.54901963)
+position = Vector2(-126.000015, -75)
+scale = Vector2(0.6666667, 0.6851852)
