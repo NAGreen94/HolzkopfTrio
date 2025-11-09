@@ -1,1 +1,9 @@
 res://Scenes/GrassLand.tscn
+<<<<<<< HEAD
+=======
+res://area_2d.gd
+res://Scenes/canvas_layer.gd
+res://Scripts/game_manager.gd
+res://Scenes/Coin.tscn
+res://Scenes/NewCave.tscn
+>>>>>>> cde6e21034885bcb9e20b94398336710008fb839

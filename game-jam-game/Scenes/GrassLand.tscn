@@ -1,11 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://crm5jskfmkul0"]
+[gd_scene load_steps=18 format=3 uid="uid://crm5jskfmkul0"]
 
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="1_dhmnf"]
 [ext_resource type="Texture2D" uid="uid://rvvdu1su6lb0" path="res://Assets/Cave/forest_assets.png" id="2_mhtjr"]
 [ext_resource type="Texture2D" uid="uid://dcl6gxmfkcs6y" path="res://Assets/Cave/tree_asset.png" id="3_mhtjr"]
 [ext_resource type="Texture2D" uid="uid://douphhhfm63xr" path="res://Assets/Cave/Backgrounds/Night/1.png" id="4_bjolv"]
 [ext_resource type="PackedScene" uid="uid://dttdug71tmgod" path="res://Scenes/playerWithSpring.tscn" id="5_2xfj7"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://dtmlxp6ytx32c" path="res://Scenes/spring_with_pickup.tscn" id="6_webea"]
+=======
+[ext_resource type="PackedScene" uid="uid://cfq36nm0hbpe1" path="res://Scenes/spring.tscn" id="6_webea"]
+[ext_resource type="PackedScene" uid="uid://dtmlxp6ytx32c" path="res://Scenes/spring_with_pickup.tscn" id="7_qlmoj"]
+[ext_resource type="PackedScene" uid="uid://585hunlg4kry" path="res://Scenes/Coin.tscn" id="8_otnrx"]
+[ext_resource type="Script" uid="uid://dqweiiup4unlw" path="res://Scenes/canvas_layer.gd" id="9_bhfy0"]
+[ext_resource type="FontFile" uid="uid://c3atn0nsncn5" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="10_5np57"]
+>>>>>>> cde6e21034885bcb9e20b94398336710008fb839
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0wf4"]
 texture = ExtResource("1_dhmnf")
@@ -2936,6 +2944,13 @@ sources/3 = SubResource("TileSetAtlasSource_t8mnh")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mhtjr"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_80ijj"]
+font = ExtResource("10_5np57")
+font_size = 35
+font_color = Color(1.2402434, 1.1841557, 0.80173963, 1)
+outline_size = 15
+outline_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -2974,5 +2989,35 @@ position = Vector2(320, -59)
 [node name="SpringWithPickup2" parent="." instance=ExtResource("6_webea")]
 position = Vector2(1789, -190)
 
+<<<<<<< HEAD
 [node name="SpringWithPickup3" parent="." instance=ExtResource("6_webea")]
 position = Vector2(5062, 270)
+=======
+[node name="Spring3" parent="." instance=ExtResource("6_webea")]
+position = Vector2(1752, -193)
+
+[node name="Spring4" parent="." instance=ExtResource("6_webea")]
+position = Vector2(5809, -192)
+
+[node name="Spring5" parent="." instance=ExtResource("6_webea")]
+position = Vector2(6185, -597)
+
+[node name="Spring6" parent="." instance=ExtResource("6_webea")]
+position = Vector2(5892, -1117)
+
+[node name="SpringWithPickup" parent="." instance=ExtResource("7_qlmoj")]
+position = Vector2(319, -59)
+scale = Vector2(0.7304127, 0.8948559)
+
+[node name="Coin" parent="." instance=ExtResource("8_otnrx")]
+position = Vector2(167, -26)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("9_bhfy0")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "TEXT TEST"
+label_settings = SubResource("LabelSettings_80ijj")
+>>>>>>> cde6e21034885bcb9e20b94398336710008fb839
