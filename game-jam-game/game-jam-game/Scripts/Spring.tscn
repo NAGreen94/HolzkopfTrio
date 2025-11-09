@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://do6r2jrcbo7bq"]
+
+[ext_resource type="Script" uid="uid://cudcba20hmahh" path="res://node_2d.gd" id="1_qn2vi"]
+[ext_resource type="Script" uid="uid://dh7tw0u6ojp4j" path="res://area_2d.gd" id="2_521k6"]
+[ext_resource type="Texture2D" uid="uid://cmaou7vokj8ob" path="res://Assets/Sp.png" id="3_hdnrs"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qn2vi")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_521k6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("3_hdnrs")
