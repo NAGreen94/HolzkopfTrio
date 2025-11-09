@@ -19,6 +19,8 @@ var is_charging_jump = false
 var charge_timer = 0.0
 var final_jump_velocity = JUMP_VELOCITY
 
+
+
 func _physics_process(delta: float) -> void:
 	# 1. Gravitation anwenden (KORRIGIERT)
 	if not is_on_floor():
@@ -59,6 +61,8 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction: -1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
 	
+	
+	
 	# Flip the Sprite
 	if direction > 0:
 		animated_sprite.flip_h = false
@@ -68,6 +72,8 @@ func _physics_process(delta: float) -> void:
 	# Play animations
 	if is_on_floor():
 		# NEU: Zeige "charging" während des Aufladens
+		if Input.is_action_pressed("jump"):
+			$Jump.play()
 		if is_charging_jump:
 			# HINWEIS: Du musst diese Animation im AnimatedSprite2D erstellen!
 			animated_sprite.play("jump_tmp") 
