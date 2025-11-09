@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dttdug71tmgod"]
-
-[ext_resource type="PackedScene" uid="uid://dfqk1j0rn3y7b" path="res://Scenes/player.tscn" id="1_l4i82"]
-
-[node name="PlayerWithSpring" groups=["player"] instance=ExtResource("1_l4i82")]
-scale = Vector2(10, 10)
