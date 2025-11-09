@@ -1,1 +1,14 @@
 res://Scenes/GrassLand.tscn
+<<<<<<< HEAD
+=======
+res://Scenes/frog.tscn
+res://Scenes/NewCave.tscn
+res://Scenes/frog.gd
+res://node_2d.gd
+res://Scenes/player.tscn
+res://Scenes/spring.tscn
+res://Scenes/playerWithSpring.tscn
+res://Scripts/player.gd
+res://spring_with_pickup.gd
+res://Scenes/spring_with_pickup.tscn
+>>>>>>> NLfusion

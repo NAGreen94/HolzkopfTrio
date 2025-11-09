@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 130.0
+const SPEED = 160.0
 const JUMP_VELOCITY = -300.0
 
 # NEU: Gravitationskonstante definieren
@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 	# 1. Gravitation anwenden (KORRIGIERT)
 	if not is_on_floor():
 		# Nutzt die definierte GRAVITY Konstante
-		velocity.y += GRAVITY * delta
+		velocity.y += GRAVITY * delta - 3
 
 	# 2. Sprung-Auflade-Logik
 	if is_on_floor():
