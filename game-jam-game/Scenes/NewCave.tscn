@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dsto4t458j2ht"]
+[gd_scene load_steps=12 format=3 uid="uid://dsto4t458j2ht"]
 
 [ext_resource type="Texture2D" uid="uid://bb7e7ixmlqq8o" path="res://Assets/mainlev_build.png" id="1_w6fag"]
 [ext_resource type="Texture2D" uid="uid://b2ckonodde4vw" path="res://Assets/Forest/Enviroment.png" id="2_e7a42"]
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="3_2v5kr"]
 [ext_resource type="PackedScene" uid="uid://bsv5yydv5swcw" path="res://Scenes/frog.tscn" id="6_dfs8i"]
 [ext_resource type="PackedScene" uid="uid://585hunlg4kry" path="res://Scenes/Coin.tscn" id="6_mnr5i"]
-[ext_resource type="PackedScene" uid="uid://cfq36nm0hbpe1" path="res://Scenes/spring.tscn" id="7_804u2"]
 [ext_resource type="PackedScene" uid="uid://dttdug71tmgod" path="res://Scenes/playerWithSpring.tscn" id="7_dfs8i"]
 [ext_resource type="PackedScene" uid="uid://dtmlxp6ytx32c" path="res://Scenes/spring_with_pickup.tscn" id="8_804u2"]
 
@@ -4178,10 +4177,6 @@ scale = Vector2(0.21709579, 0.096239075)
 position = Vector2(377, -32)
 scale = Vector2(2.4899118, 2.7614589)
 
-[node name="Spring" parent="." instance=ExtResource("7_804u2")]
-position = Vector2(188, -33)
-scale = Vector2(0.51299006, 0.511535)
-
 [node name="SpringWithPickup" parent="." instance=ExtResource("8_804u2")]
-position = Vector2(-130, -73)
-scale = Vector2(0.33228445, 0.4020516)
+position = Vector2(-166.00002, -69.00001)
+scale = Vector2(0.5151515, 0.54901963)

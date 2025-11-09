@@ -8,7 +8,7 @@ extends Node2D
 # Optional: Animation player reference
 @onready var sprite = $Area2D/Sprite2D
 @onready var area = $Area2D
-@onready var pickup_indicator = $PickupIndicator
+@onready var pickup_indicator = $Area2D/PickupIndicator
 
 var player_nearby: Node2D = null
 var is_being_carried: bool = false
@@ -17,8 +17,9 @@ var carried_by: Node2D = null
 func _ready():
 	# Connect the area's body_entered signal to our function
 	area.body_entered.connect(_on_body_entered)
+	area.body_exited.connect(_on_body_exited)
 	
-		# ✨ NEW: Hide the pickup indicator when the game starts
+		# NEW: Hide the pickup indicator when the game starts
 	if pickup_indicator:
 		pickup_indicator.visible = false
 		
@@ -42,6 +43,8 @@ func _on_body_entered(body):
 	# Check if the body that entered is the player
 	if body.is_in_group("player"):
 		player_nearby = body
+		if pickup_indicator and is_pickable and not is_being_carried:
+			pickup_indicator.visible = true  # Show when player nearby
 		# Apply upward velocity to the player
 				# Only bounce if not being carried and player is falling
 		if not is_being_carried and body.velocity.y > 0:
@@ -52,6 +55,10 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.is_in_group("player") and body == player_nearby:
 		player_nearby = null
+		if pickup_indicator:
+			pickup_indicator.visible = false
+			#if pickup_indicator.visible = false:
+				#coincounter++   # Hide when player leaves
 
 func pickup(player):
 	is_being_carried = true
