@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://1uqphl543ian"]
+
+[ext_resource type="Script" uid="uid://cxh2gbjc1fh8e" path="res://Scenes/main_menu.gd" id="1_totuj"]
+[ext_resource type="Texture2D" uid="uid://cuo6ce0cer4bj" path="res://Assets/buttons/start_btn.png" id="2_ur25d"]
+[ext_resource type="Texture2D" uid="uid://w16nmkgugww" path="res://Assets/buttons/start_btn_hover.png" id="3_eotax"]
+[ext_resource type="Texture2D" uid="uid://bqkwqq131f0r" path="res://Assets/buttons/Fungis_Adventure_logo.png" id="4_eotax"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_totuj")
+
+[node name="Button Manager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="TextureButton" parent="Button Manager"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 419.75
+offset_right = 1071.0
+offset_bottom = 589.75
+scale = Vector2(0.36, 0.36)
+texture_normal = ExtResource("2_ur25d")
+texture_pressed = ExtResource("3_eotax")
+texture_hover = ExtResource("3_eotax")
+
+[node name="Logo" type="Sprite2D" parent="Button Manager"]
+position = Vector2(575, 283.75)
+scale = Vector2(0.48987338, 0.4898734)
+texture = ExtResource("4_eotax")
+
+[connection signal="pressed" from="Button Manager/Start" to="." method="_on_start_pressed"]
