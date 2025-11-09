@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 res://Scenes/GrassLand.tscn
-res://Scripts/player.gd
-res://Scenes/player.tscn
-=======
-res://Scenes/player.tscn
-res://Scripts/player.gd
-res://Scenes/spring_with_pickup.tscn
-res://spring_with_pickup.gd
+res://area_2d.gd
+res://Scenes/canvas_layer.gd
+res://Scripts/game_manager.gd
+res://Scenes/Coin.tscn
 res://Scenes/NewCave.tscn
->>>>>>> origin/13-20
