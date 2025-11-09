@@ -1,4 +1,5 @@
 AudioStreamPlayer2D
+AnimationPlayer
 Label
 CanvasLayer
 CollisionShape2D
@@ -11,4 +12,3 @@ RayCast2D
 AnimatedSprite2D
 StaticBody2D
 TileMap
-AnimatableBody2D

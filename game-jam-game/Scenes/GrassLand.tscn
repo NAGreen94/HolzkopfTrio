@@ -1,14 +1,17 @@
-[gd_scene load_steps=17 format=3 uid="uid://crm5jskfmkul0"]
+[gd_scene load_steps=20 format=3 uid="uid://crm5jskfmkul0"]
 
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="1_dhmnf"]
 [ext_resource type="Texture2D" uid="uid://rvvdu1su6lb0" path="res://Assets/Cave/forest_assets.png" id="2_mhtjr"]
 [ext_resource type="Texture2D" uid="uid://dcl6gxmfkcs6y" path="res://Assets/Cave/tree_asset.png" id="3_mhtjr"]
 [ext_resource type="Texture2D" uid="uid://douphhhfm63xr" path="res://Assets/Cave/Backgrounds/Night/1.png" id="4_bjolv"]
 [ext_resource type="PackedScene" uid="uid://dttdug71tmgod" path="res://Scenes/playerWithSpring.tscn" id="5_2xfj7"]
+[ext_resource type="AudioStream" uid="uid://b14sor8561nsh" path="res://Assets/music/music_biiansu_an_autumn_019.mp3" id="7_80ijj"]
 [ext_resource type="PackedScene" uid="uid://dtmlxp6ytx32c" path="res://Scenes/spring_with_pickup.tscn" id="7_qlmoj"]
+[ext_resource type="AudioStream" uid="uid://cjewv3dsi2br5" path="res://Assets/sounds/zapsplat_multimedia_game_sound_jump_small_cute_113381(1).mp3" id="8_2jd6c"]
 [ext_resource type="PackedScene" uid="uid://585hunlg4kry" path="res://Scenes/Coin.tscn" id="8_otnrx"]
 [ext_resource type="Script" uid="uid://dqweiiup4unlw" path="res://Scenes/canvas_layer.gd" id="9_bhfy0"]
 [ext_resource type="FontFile" uid="uid://c3atn0nsncn5" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="10_5np57"]
+[ext_resource type="AudioStream" uid="uid://cxx0bnj5tnua" path="res://Assets/sounds/west_wolf_Nature_Ambience_With_Crickets.mp3" id="10_80ijj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0wf4"]
 texture = ExtResource("1_dhmnf")
@@ -2948,6 +2951,10 @@ outline_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [node name="Node2D" type="Node2D"]
 
+[node name="CoinSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(3, -5)
+scale = Vector2(9.999999, 9.999999)
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1800, -113)
 tile_set = SubResource("TileSet_t8mnh")
@@ -2970,6 +2977,24 @@ position = Vector2(3.0000076, -5.0000153)
 [node name="Camera2D" type="Camera2D" parent="PlayerWithSpring"]
 position = Vector2(-12.300012, 8.4)
 scale = Vector2(0.099999994, 0.099999994)
+
+[node name="Ambiance" type="AudioStreamPlayer2D" parent="PlayerWithSpring"]
+position = Vector2(-0.30000076, 0.5000015)
+scale = Vector2(0.099999994, 0.099999994)
+stream = ExtResource("10_80ijj")
+autoplay = true
+bus = &"Ambiance"
+
+[node name="Musik" type="AudioStreamPlayer2D" parent="PlayerWithSpring"]
+position = Vector2(-0.30000076, 0.5000015)
+scale = Vector2(0.099999994, 0.099999994)
+stream = ExtResource("7_80ijj")
+autoplay = true
+bus = &"Musik"
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="PlayerWithSpring"]
+stream = ExtResource("8_2jd6c")
+bus = &"SFX"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-400, 0)
