@@ -1,8 +1,13 @@
 CollisionShape2D
+<<<<<<< HEAD
 Camera2D
 Label
 Sprite2D
+=======
+>>>>>>> origin/13-20
 Area2D
+Label
+Sprite2D
 Node2D
 RayCast2D
 AnimatedSprite2D

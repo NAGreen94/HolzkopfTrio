@@ -1,7 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtmlxp6ytx32c"]
+[gd_scene load_steps=6 format=3 uid="uid://dtmlxp6ytx32c"]
 
 [ext_resource type="Script" uid="uid://p1bd3ujdjvjd" path="res://spring_with_pickup.gd" id="1_xkqex"]
 [ext_resource type="Texture2D" uid="uid://cmaou7vokj8ob" path="res://Assets/Sp.png" id="2_j7ihu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xkqex"]
+radius = 69.115845
+
+[sub_resource type="LabelSettings" id="LabelSettings_xkqex"]
+font_size = 25
+outline_size = 10
+outline_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ypfjt"]
 radius = 28.0
@@ -10,12 +18,18 @@ height = 128.0
 [node name="SpringWithPickup" type="Node2D"]
 script = ExtResource("1_xkqex")
 
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("CircleShape2D_xkqex")
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="PickupIndicator" type="Label" parent="Area2D"]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Pick up [E]"
+label_settings = SubResource("LabelSettings_xkqex")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 texture = ExtResource("2_j7ihu")

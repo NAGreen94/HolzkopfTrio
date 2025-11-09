@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 230.0
+const SPEED = 160.0
 const JUMP_VELOCITY = -300.0
 
 # NEU: Gravitationskonstante definieren
@@ -9,8 +9,8 @@ const GRAVITY = 980.0
 
 # Neue Konstanten für den aufladbaren Sprung
 const MAX_CHARGE_TIME = 0.01 # Maximale Aufladezeit in Sekunden
-const MAX_JUMP_BOOST = -300.0 # Zusätzliche maximale negative Y-Geschwindigkeit (höherer Sprung)
-const MIN_JUMP_VELOCITY = -100.0 # Minimale Sprunggeschwindigkeit bei kurzem Tippen
+const MAX_JUMP_BOOST = -350.0 # Zusätzliche maximale negative Y-Geschwindigkeit (höherer Sprung)
+const MIN_JUMP_VELOCITY = -50.0 # Minimale Sprunggeschwindigkeit bei kurzem Tippen
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 	# 1. Gravitation anwenden (KORRIGIERT)
 	if not is_on_floor():
 		# Nutzt die definierte GRAVITY Konstante
-		velocity.y += GRAVITY * delta
+		velocity.y += GRAVITY * delta - 3
 
 	# 2. Sprung-Auflade-Logik
 	if is_on_floor():
