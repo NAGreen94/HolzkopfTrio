@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://crm5jskfmkul0"]
+[gd_scene load_steps=19 format=3 uid="uid://crm5jskfmkul0"]
 
 [ext_resource type="Texture2D" uid="uid://odp7eg33obbj" path="res://Assets/Cave/cave_assets.png" id="1_dhmnf"]
 [ext_resource type="Texture2D" uid="uid://rvvdu1su6lb0" path="res://Assets/Cave/forest_assets.png" id="2_mhtjr"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://585hunlg4kry" path="res://Scenes/Coin.tscn" id="8_otnrx"]
 [ext_resource type="Script" uid="uid://dqweiiup4unlw" path="res://Scenes/canvas_layer.gd" id="9_bhfy0"]
 [ext_resource type="FontFile" uid="uid://c3atn0nsncn5" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="10_5np57"]
+[ext_resource type="AudioStream" uid="uid://cxx0bnj5tnua" path="res://Assets/sounds/west_wolf_Nature_Ambience_With_Crickets.mp3" id="11_80ijj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u0wf4"]
 texture = ExtResource("1_dhmnf")
@@ -2998,8 +2999,8 @@ position = Vector2(6185, -597)
 position = Vector2(5892, -1117)
 
 [node name="SpringWithPickup" parent="." instance=ExtResource("7_qlmoj")]
-position = Vector2(319, -59)
-scale = Vector2(0.7304127, 0.8948559)
+position = Vector2(316, -39.000004)
+scale = Vector2(0.88388056, 0.6400323)
 
 [node name="Coin" parent="." instance=ExtResource("8_otnrx")]
 position = Vector2(167, -26)
@@ -3010,5 +3011,10 @@ script = ExtResource("9_bhfy0")
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_right = 40.0
 offset_bottom = 23.0
+scale = Vector2(1.0021967, 1.0054414)
 text = "TEXT TEST"
 label_settings = SubResource("LabelSettings_80ijj")
+
+[node name="Ambiance" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_80ijj")
+autoplay = true

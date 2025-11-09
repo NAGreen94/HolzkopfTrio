@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtmlxp6ytx32c"]
 
 [ext_resource type="Script" uid="uid://p1bd3ujdjvjd" path="res://spring_with_pickup.gd" id="1_xkqex"]
-[ext_resource type="Texture2D" uid="uid://cmaou7vokj8ob" path="res://Assets/Sp.png" id="2_j7ihu"]
+[ext_resource type="Texture2D" uid="uid://buwu2d2irpgw2" path="res://Assets/pilz_asset_rot.png" id="2_xkqex"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xkqex"]
 radius = 69.115845
@@ -32,7 +32,10 @@ text = "Pick up [E]"
 label_settings = SubResource("LabelSettings_xkqex")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-texture = ExtResource("2_j7ihu")
+position = Vector2(21.000023, -37)
+scale = Vector2(0.97265625, 1)
+texture = ExtResource("2_xkqex")
+offset = Vector2(-18.506027, -8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 5)
