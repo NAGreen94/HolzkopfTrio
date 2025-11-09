@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnu3k2afvvs7"]
+[gd_scene load_steps=3 format=3 uid="uid://cnu3k2afvvs7"]
 
 [ext_resource type="PackedScene" uid="uid://crm5jskfmkul0" path="res://Scenes/GrassLand.tscn" id="1_3m8g2"]
+[ext_resource type="PackedScene" uid="uid://1uqphl543ian" path="res://Scenes/Main Menu.tscn" id="1_o5aoa"]
 
 [node name="GameJamGame" type="Node2D"]
 position = Vector2(1, 0)
 
+[node name="MainMenu" parent="." instance=ExtResource("1_o5aoa")]
+position = Vector2(-16467, 23)
+
 [node name="Node2D" parent="." instance=ExtResource("1_3m8g2")]
+position = Vector2(0, -10)

@@ -1,33 +1,68 @@
-[gd_scene load_steps=5 format=3 uid="uid://1uqphl543ian"]
+[gd_scene load_steps=9 format=3 uid="uid://1uqphl543ian"]
 
-[ext_resource type="Script" uid="uid://cxh2gbjc1fh8e" path="res://Scenes/main_menu.gd" id="1_totuj"]
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_totuj"]
 [ext_resource type="Texture2D" uid="uid://cuo6ce0cer4bj" path="res://Assets/buttons/start_btn.png" id="2_ur25d"]
 [ext_resource type="Texture2D" uid="uid://w16nmkgugww" path="res://Assets/buttons/start_btn_hover.png" id="3_eotax"]
 [ext_resource type="Texture2D" uid="uid://bqkwqq131f0r" path="res://Assets/buttons/Fungis_Adventure_logo.png" id="4_eotax"]
+[ext_resource type="Texture2D" uid="uid://k54pmvdqn6iu" path="res://Assets/Forest/Midleground.png" id="5_mjet1"]
+[ext_resource type="AudioStream" uid="uid://bc8a73mnqdxmf" path="res://Assets/music/music_DeepTheme_Audio_stinger_Light_Blueish_085.mp3" id="7_0126h"]
+[ext_resource type="Texture2D" uid="uid://douphhhfm63xr" path="res://Assets/Cave/Backgrounds/Night/1.png" id="13_s8c0c"]
+[ext_resource type="Texture2D" uid="uid://0kbr3yokfwei" path="res://Assets/Cave/Backgrounds/Night/2.png" id="14_jgydl"]
 
 [node name="MainMenu" type="Node2D"]
+position = Vector2(-12857, 255)
 script = ExtResource("1_totuj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(38, -286)
 
 [node name="Button Manager" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -20.0
+offset_top = -66.0
+offset_right = 20.0
+offset_bottom = -26.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Start" type="TextureButton" parent="Button Manager"]
 layout_mode = 0
-offset_left = 483.0
-offset_top = 419.75
-offset_right = 1071.0
-offset_bottom = 589.75
+offset_left = -32.999996
+offset_top = -146.0
+offset_right = 555.0
+offset_bottom = 24.0
 scale = Vector2(0.36, 0.36)
 texture_normal = ExtResource("2_ur25d")
 texture_pressed = ExtResource("3_eotax")
 texture_hover = ExtResource("3_eotax")
+metadata/_edit_use_anchors_ = true
 
 [node name="Logo" type="Sprite2D" parent="Button Manager"]
-position = Vector2(575, 283.75)
+position = Vector2(56.999992, -363)
 scale = Vector2(0.48987338, 0.4898734)
 texture = ExtResource("4_eotax")
+
+[node name="Midleground" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(314.00003, -224)
+scale = Vector2(7.3008676, 6.3714256)
+texture = ExtResource("5_mjet1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(5, 0)
+stream = ExtResource("7_0126h")
+autoplay = true
+bus = &"Musik"
+
+[node name="1" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(-87, -186.00002)
+scale = Vector2(4.873264, 4.4290123)
+texture = ExtResource("13_s8c0c")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(369.00003, -301)
+scale = Vector2(3.9131944, 3.4753087)
+texture = ExtResource("14_jgydl")
 
 [connection signal="pressed" from="Button Manager/Start" to="." method="_on_start_pressed"]
