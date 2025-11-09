@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762696614
+::res://::1762698410
 area_2d.gd::GDScript::7717838300411334055::1762695841::0::1::::<>Area2D<><>0<>0<><>::
 character_body_2d.gd::GDScript::2388720616583046343::1762685479::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Frog gravity move.gd::GDScript::2280127325460579797::1762685479::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -65,14 +65,14 @@ slime_green.png::CompressedTexture2D::3110287168080552071::1762609353::176261282
 slime_purple.png::CompressedTexture2D::4604697551274676429::1762609353::1762612824::1::::<><><>0<>0<>785297309097797100a9f229a7ae887e<>res://.godot/imported/slime_purple.png-43dfa43f13125aefcc7affc07742c2cf.ctex::
 walk_animation.png::CompressedTexture2D::9055805897189789156::1762609353::1762612824::1::::<><><>0<>0<>31a79b716ca06229b035999f4f3f094b<>res://.godot/imported/walk_animation.png-d7cc33614dd2a026b82d49542c37dc11.ctex::
 world_tileset.png::CompressedTexture2D::7762283723730798847::1762609353::1762612824::1::::<><><>0<>0<>7da928a9723e0252c8183fca918e764e<>res://.godot/imported/world_tileset.png-7d0351459d02dec97d7c98fe9a06c85b.ctex::
-::res://Scenes/::1762696605
+::res://Scenes/::1762697880
 canvas_layer.gd::GDScript::8327957466003417488::1762695841::0::1::::<>CanvasLayer<><>0<>0<><>::
 Coin.tscn::PackedScene::2175624856423692266::1762614024::0::1::::<><><>0<>0<><>::uid://dh7tw0u6ojp4j::::res://area_2d.gd<>uid://b5c2day46enxa::::res://Assets/Forest/Coin - 32x32 - 9F.png
 frog.gd::GDScript::7442854824920047168::1762685479::0::1::::<>Area2D<><>0<>0<><>::
 frog.tscn::PackedScene::3695037437039434370::1762685479::0::1::::<><><>0<>0<><>::uid://debmy4w56hu1u::::res://Scenes/frog.gd<>uid://bsu1dwh037868::::res://Assets/Forest/Frog - 14F.png
 game_jam_game.tscn::PackedScene::168479507114260880::1762612470::0::1::::<><><>0<>0<><>::uid://dfqk1j0rn3y7b::::res://Scenes/player.tscn<>uid://bb7e7ixmlqq8o::::res://Assets/mainlev_build.png<>uid://b2ckonodde4vw::::res://Assets/Forest/Enviroment.png<>uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://cfgf66bnlk83x::::res://Scenes/killzone.tscn
 Gras.tscn::PackedScene::5020052241456710382::1762609353::0::1::::<><><>0<>0<><>::uid://chde25tbr0mxp::::res://Assets/Forest/Bush - 60F.png
-GrassLand.tscn::PackedScene::5992662785321584399::1762696605::0::1::::<><><>0<>0<><>::uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://rvvdu1su6lb0::::res://Assets/Cave/forest_assets.png<>uid://dcl6gxmfkcs6y::::res://Assets/Cave/tree_asset.png<>uid://douphhhfm63xr::::res://Assets/Cave/Backgrounds/Night/1.png<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://cfq36nm0hbpe1::::res://Scenes/spring.tscn<>uid://dtmlxp6ytx32c::::res://Scenes/spring_with_pickup.tscn<>uid://585hunlg4kry::::res://Scenes/Coin.tscn<>uid://dqweiiup4unlw::::res://Scenes/canvas_layer.gd<>uid://c3atn0nsncn5::::res://Assets/fonts/PixelOperator8-Bold.ttf
+GrassLand.tscn::PackedScene::5992662785321584399::1762697880::0::1::::<><><>0<>0<><>::uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://rvvdu1su6lb0::::res://Assets/Cave/forest_assets.png<>uid://dcl6gxmfkcs6y::::res://Assets/Cave/tree_asset.png<>uid://douphhhfm63xr::::res://Assets/Cave/Backgrounds/Night/1.png<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://dtmlxp6ytx32c::::res://Scenes/spring_with_pickup.tscn<>uid://585hunlg4kry::::res://Scenes/Coin.tscn<>uid://dqweiiup4unlw::::res://Scenes/canvas_layer.gd<>uid://c3atn0nsncn5::::res://Assets/fonts/PixelOperator8-Bold.ttf
 hub_level.tscn::PackedScene::8462317862125695218::1762609353::0::1::::<><><>0<>0<><>::
 killzone.tscn::PackedScene::5136532427050058035::1762609353::0::1::::<><><>0<>0<><>::uid://bexnm7amll3rc::::res://Scripts/killzone.gd
 NewCave.tscn::PackedScene::8462787283963522117::1762693835::0::1::::<><><>0<>0<><>::uid://bb7e7ixmlqq8o::::res://Assets/mainlev_build.png<>uid://b2ckonodde4vw::::res://Assets/Forest/Enviroment.png<>uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://bsv5yydv5swcw::::res://Scenes/frog.tscn<>uid://585hunlg4kry::::res://Scenes/Coin.tscn<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://dtmlxp6ytx32c::::res://Scenes/spring_with_pickup.tscn
