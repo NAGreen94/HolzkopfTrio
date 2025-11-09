@@ -1,40 +1,40 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762687626
+::res://::1762691184
 area_2d.gd::GDScript::7717838300411334055::1762687608::0::1::::<>Area2D<><>0<>0<><>::
 character_body_2d.gd::GDScript::2388720616583046343::1762687608::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Frog gravity move.gd::GDScript::2280127325460579797::1762687608::0::1::::<>CharacterBody2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::7732110351721179258::1762687608::1762687627::1::::<><><>0<>0<>898540659fcba4d2c9876b0a53ad086b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 node_2d.gd::GDScript::6182934636043898021::1762687609::0::1::::<>Node2D<><>0<>0<><>::
-spring_with_pickup.gd::GDScript::1106574052513719585::1762687609::0::1::::<>Node2D<><>0<>0<><>::
+spring_with_pickup.gd::GDScript::1106574052513719585::1762690560::0::1::::<>Node2D<><>0<>0<><>::
 switch.gd::GDScript::8553138692402815998::1762687609::0::1::::<>Area2D<><>0<>0<><>::
-::res://Assets/::1762687609
+::res://Assets/::1762687627
 funguy_character.png::CompressedTexture2D::366186799306793594::1762687609::1762687627::1::::<><><>0<>0<>76651b61653709c324ca9713781daadd<>res://.godot/imported/funguy_character.png-581eb3fbf13261fd2231f6f27c06d88f.ctex::
 mainlev_build.png::CompressedTexture2D::2522970085114944800::1762687609::1762687627::1::::<><><>0<>0<>5f6c532b1168a1096d4cad3b26917698<>res://.godot/imported/mainlev_build.png-44c85f8cae9981d4520dd280768de382.ctex::
 props1.png::CompressedTexture2D::7700928579882084099::1762687609::1762687627::1::::<><><>0<>0<>304c8332ed150b4b4a540e938dcd7cd4<>res://.godot/imported/props1.png-1d52641f75fb187048a3a7a6d75679d2.ctex::
 props2.png::CompressedTexture2D::9130518502316577060::1762687609::1762687627::1::::<><><>0<>0<>48fbb1987bf82fe230a8da27116d0e8d<>res://.godot/imported/props2.png-abeb91dc1461ded9ef878a19b9e62cda.ctex::
 Sp.png::CompressedTexture2D::5615994958657368137::1762687609::1762687627::1::::<><><>0<>0<>3846e97503cdda476abd6c56efc54593<>res://.godot/imported/Sp.png-9d70063e835cf16f3c12370100f06f66.ctex::
-::res://Assets/Cave/::1762687609
+::res://Assets/Cave/::1762687628
 cave_assets.png::CompressedTexture2D::989805065163474143::1762687609::1762687627::1::::<><><>0<>0<>7139ea5ce30c9a0eb680af98315aaa46<>res://.godot/imported/cave_assets.png-8388c9e11a450761781469f0982792a5.ctex::
 forest_assets.png::CompressedTexture2D::1237843780389329503::1762687609::1762687627::1::::<><><>0<>0<>cad6655ee1e87638c1199c012a235596<>res://.godot/imported/forest_assets.png-563182278f236c5c42e90e63c87fbaf1.ctex::
 mainlev_build.png::CompressedTexture2D::841144619477340305::1762687609::1762687627::1::::<><><>0<>0<>0e63b7c79e92eb8f70035ebd01facf2e<>res://.godot/imported/mainlev_build.png-3bbadec6776adc990c082c103475c67a.ctex::
 props1.png::CompressedTexture2D::6647963069759996724::1762687609::1762687628::1::::<><><>0<>0<>c220c8f65695bbe8682f72c3cec258f3<>res://.godot/imported/props1.png-41731820939e5999e39da196d9ff25bc.ctex::
 props2.png::CompressedTexture2D::8055083800665394454::1762687609::1762687628::1::::<><><>0<>0<>e8659fe1dd287dc5c1958315e7f51e32<>res://.godot/imported/props2.png-de883bbecc47af2450c1f1245a6f58fc.ctex::
 tree_asset.png::CompressedTexture2D::7324242062004562510::1762687609::1762687627::1::::<><><>0<>0<>698190cc866f35f01c7595c868053ef8<>res://.godot/imported/tree_asset.png-b5b00a22b9ccf0f2c220f231906c213d.ctex::
-::res://Assets/Cave/Backgrounds/::1762687609
+::res://Assets/Cave/Backgrounds/::1762687627
 background1.png::CompressedTexture2D::2196414950055827510::1762687609::1762687627::1::::<><><>0<>0<>5132bfe78083e21ac8beb016e8cc41b4<>res://.godot/imported/background1.png-9e616070e20ffb12c9591a1468da8018.ctex::
 background2.png::CompressedTexture2D::1632971496896679121::1762687609::1762687627::1::::<><><>0<>0<>52212a4d5c48167ac118da4af1b10e40<>res://.godot/imported/background2.png-2cd285677dfacc084587b984a7ac90bc.ctex::
 background3.png::CompressedTexture2D::7189096570736450107::1762687609::1762687627::1::::<><><>0<>0<>f5c8e669f78ba2dd5bfc4af65f7cf717<>res://.godot/imported/background3.png-6bd76ee29387eb827ec10b35c735e3f3.ctex::
 background4a.png::CompressedTexture2D::5046342598445431164::1762687609::1762687627::1::::<><><>0<>0<>2e6f18dea684df6aa0ce27248b39c1ae<>res://.godot/imported/background4a.png-3c22f94cf76f7ff1cfbafb26563ed20f.ctex::
 background4b.png::CompressedTexture2D::3340250724416424822::1762687609::1762687627::1::::<><><>0<>0<>afa3c3a1ac444de352d992d70d9a426a<>res://.godot/imported/background4b.png-75c4c8262bd27d6a4beb41b8cbe60843.ctex::
-::res://Assets/Cave/Backgrounds/Night/::1762687609
+::res://Assets/Cave/Backgrounds/Night/::1762687627
 1.png::CompressedTexture2D::8184117051263329959::1762687609::1762687627::1::::<><><>0<>0<>61ddd8ffdbace3af6b3dd9d308cea1b8<>res://.godot/imported/1.png-ace9dc6b65746ba896950b4a2c44348b.ctex::
 2.png::CompressedTexture2D::1775457452359348464::1762687609::1762687627::1::::<><><>0<>0<>7393ef8f9896247c4da0189fd8ca96a6<>res://.godot/imported/2.png-ddd6231a1f2b87d8d25f023469018043.ctex::
 3.png::CompressedTexture2D::5105485744719865970::1762687609::1762687627::1::::<><><>0<>0<>9b65f326cc71207c2014fde1cb1bd788<>res://.godot/imported/3.png-34e309d5e7a9c1bdf77716769000e458.ctex::
 4.png::CompressedTexture2D::5773441893023923659::1762687609::1762687627::1::::<><><>0<>0<>2ba7c3f8aacfb1a544db20a5100643eb<>res://.godot/imported/4.png-040fdffcacd80328617579787b755392.ctex::
-::res://Assets/fonts/::1762687609
+::res://Assets/fonts/::1762687627
 PixelOperator8-Bold.ttf::FontFile::198214916512822088::1762687609::1762687627::1::::<><><>0<>0<>597e28b4ab99aa6b4cc17e10527530ca<>res://.godot/imported/PixelOperator8-Bold.ttf-18d3f5771d654272ea5e81396761520b.fontdata::
 PixelOperator8.ttf::FontFile::6701285453506747572::1762687609::1762687627::1::::<><><>0<>0<>93df9e292ba32821b42761de1e2d9c6f<>res://.godot/imported/PixelOperator8.ttf-23bb57fce2fe6dbb570e8add02d65ecc.fontdata::
-::res://Assets/Forest/::1762687609
+::res://Assets/Forest/::1762687628
 Background.png::CompressedTexture2D::1982293260797600988::1762687609::1762687627::1::::<><><>0<>0<>eb4c4f7b18ada8bbb1eca8e6a0fa8dc8<>res://.godot/imported/Background.png-82cc4664c2ea9cd06d530d8fe54df2fa.ctex::
 Bush - 60F.png::CompressedTexture2D::5270649095642044805::1762687609::1762687628::1::::<><><>0<>0<>459f9be989556fea25167b3fd96270ec<>res://.godot/imported/Bush - 60F.png-06b5485ad36087e52ba0c3df6119cfcd.ctex::
 Coin - 12x12 - 4F.png::CompressedTexture2D::1211962145609838176::1762687609::1762687627::1::::<><><>0<>0<>d42b3928a978213005e77d17fe8b4bd3<>res://.godot/imported/Coin - 12x12 - 4F.png-af11247dca133073aaacdc175e3c5cda.ctex::
@@ -46,16 +46,16 @@ Midleground.png::CompressedTexture2D::765608011580247208::1762687609::1762687627
 Pine II - 60F.png::CompressedTexture2D::2886163841115090149::1762687609::1762687628::1::::<><><>0<>0<>ef2fd9e676afa80328374efbd51d7fdd<>res://.godot/imported/Pine II - 60F.png-46fc8916e8cd96b3164353c873bb14dc.ctex::
 Snake - 6F.png::CompressedTexture2D::1297281945537105481::1762687609::1762687627::1::::<><><>0<>0<>0db67ffec88063a7d89544a3553306d2<>res://.godot/imported/Snake - 6F.png-7e6bed160c30c48b34bf536fff65825f.ctex::
 Tree1 - 42F.png::CompressedTexture2D::3313292137217835896::1762687609::1762687628::1::::<><><>0<>0<>386f11b1cb3d69ab9aadb846ff32cbf7<>res://.godot/imported/Tree1 - 42F.png-37e82f64ce2988ec367552d01dd09c91.ctex::
-::res://Assets/music/::1762687609
+::res://Assets/music/::1762687627
 time_for_adventure.mp3::AudioStreamMP3::4678662402541926476::1762687609::1762687627::1::::<><><>0<>0<>b84b09cb301c452398245611fa8a2f89<>res://.godot/imported/time_for_adventure.mp3-03457712da64731c4f2e6ca402d9e56d.mp3str::
-::res://Assets/sounds/::1762687609
+::res://Assets/sounds/::1762687628
 coin.wav::AudioStreamWAV::9202068167886916002::1762687609::1762687628::1::::<><><>0<>0<>662967a1ca02544227bb1398c034c21f<>res://.godot/imported/coin.wav-a90ab7f02c97268f62cd0d3d51198a0f.sample::
 explosion.wav::AudioStreamWAV::2411777692382064403::1762687609::1762687628::1::::<><><>0<>0<>31214432aee0e273c00ba1fe1d3e6598<>res://.godot/imported/explosion.wav-93aee333cdacd774a9e9de2a83478f9f.sample::
 hurt.wav::AudioStreamWAV::4322510361344875711::1762687609::1762687628::1::::<><><>0<>0<>25d2df89976fa2a1f89830196cdcf894<>res://.godot/imported/hurt.wav-03eae188dc5364720c82bf41f5cac6a9.sample::
 jump.wav::AudioStreamWAV::7123601114490114652::1762687609::1762687628::1::::<><><>0<>0<>e6a4349680487d01baa4738d367a477d<>res://.godot/imported/jump.wav-37a1b6f890a57621d547e6e872aeb357.sample::
 power_up.wav::AudioStreamWAV::4552229699919751871::1762687609::1762687628::1::::<><><>0<>0<>efe51480721ee472f62152893f36ddf9<>res://.godot/imported/power_up.wav-359f8a6678099d5ff83eaa154a913f3b.sample::
 tap.wav::AudioStreamWAV::9089617255893510407::1762687609::1762687628::1::::<><><>0<>0<>a421aae7e514f716aa0aeb704f351104<>res://.godot/imported/tap.wav-4501df6b6e4c02632fcee28bfc6332c4.sample::
-::res://Assets/sprites/::1762687609
+::res://Assets/sprites/::1762687627
 coin.png::CompressedTexture2D::3874796993050645085::1762687609::1762687627::1::::<><><>0<>0<>19861236dd3fa6cbd1a8300f1f16ca44<>res://.godot/imported/coin.png-5cebf264b7708a56a3ce47f5a666e217.ctex::
 fruit.png::CompressedTexture2D::3676708371948548352::1762687609::1762687627::1::::<><><>0<>0<>83b431718497ba0c6e3e61eb1c0b2ece<>res://.godot/imported/fruit.png-ffffa8b0de582e4e19865d6cd600e2dd.ctex::
 idle_animation_new.png::CompressedTexture2D::4572160300585603929::1762687609::1762687627::1::::<><><>0<>0<>256f3df7329d8df8574eac549fbe0a5f<>res://.godot/imported/idle_animation_new.png-2e875f440c94eff6e633d449b8ac982c.ctex::
@@ -65,24 +65,24 @@ slime_green.png::CompressedTexture2D::3110287168080552071::1762687609::176268762
 slime_purple.png::CompressedTexture2D::4604697551274676429::1762687609::1762687627::1::::<><><>0<>0<>785297309097797100a9f229a7ae887e<>res://.godot/imported/slime_purple.png-43dfa43f13125aefcc7affc07742c2cf.ctex::
 walk_animation.png::CompressedTexture2D::9055805897189789156::1762687609::1762687627::1::::<><><>0<>0<>31a79b716ca06229b035999f4f3f094b<>res://.godot/imported/walk_animation.png-d7cc33614dd2a026b82d49542c37dc11.ctex::
 world_tileset.png::CompressedTexture2D::7762283723730798847::1762687609::1762687627::1::::<><><>0<>0<>7da928a9723e0252c8183fca918e764e<>res://.godot/imported/world_tileset.png-7d0351459d02dec97d7c98fe9a06c85b.ctex::
-::res://Scenes/::1762687609
-Coin.tscn::PackedScene::2175624856423692266::1762687609::0::1::::<><><>0<>0<><>::uid://dh7tw0u6ojp4j::::res://area_2d.gd<>uid://b5c2day46enxa::::res://Assets/Forest/Coin - 32x32 - 9F.png
+::res://Scenes/::1762691020
+Coin.tscn::PackedScene::2175624856423692266::1762690316::0::1::::<><><>0<>0<><>::uid://dh7tw0u6ojp4j::::res://area_2d.gd<>uid://b5c2day46enxa::::res://Assets/Forest/Coin - 32x32 - 9F.png
 frog.gd::GDScript::7442854824920047168::1762687609::0::1::::<>Area2D<><>0<>0<><>::
 frog.tscn::PackedScene::3695037437039434370::1762687609::0::1::::<><><>0<>0<><>::uid://debmy4w56hu1u::::res://Scenes/frog.gd<>uid://bsu1dwh037868::::res://Assets/Forest/Frog - 14F.png
 game_jam_game.tscn::PackedScene::168479507114260880::1762687609::0::1::::<><><>0<>0<><>::uid://dfqk1j0rn3y7b::::res://Scenes/player.tscn<>uid://bb7e7ixmlqq8o::::res://Assets/mainlev_build.png<>uid://b2ckonodde4vw::::res://Assets/Forest/Enviroment.png<>uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://cfgf66bnlk83x::::res://Scenes/killzone.tscn
 Gras.tscn::PackedScene::5020052241456710382::1762687609::0::1::::<><><>0<>0<><>::uid://chde25tbr0mxp::::res://Assets/Forest/Bush - 60F.png
-GrassLand.tscn::PackedScene::5992662785321584399::1762687609::0::1::::<><><>0<>0<><>::uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://rvvdu1su6lb0::::res://Assets/Cave/forest_assets.png<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://dcl6gxmfkcs6y::::res://Assets/Cave/tree_asset.png<>uid://douphhhfm63xr::::res://Assets/Cave/Backgrounds/Night/1.png<>uid://cfq36nm0hbpe1::::res://Scenes/spring.tscn
+GrassLand.tscn::PackedScene::5992662785321584399::1762691020::0::1::::<><><>0<>0<><>::uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://rvvdu1su6lb0::::res://Assets/Cave/forest_assets.png<>uid://dcl6gxmfkcs6y::::res://Assets/Cave/tree_asset.png<>uid://douphhhfm63xr::::res://Assets/Cave/Backgrounds/Night/1.png<>uid://dfqk1j0rn3y7b::::res://Scenes/player.tscn
 hub_level.tscn::PackedScene::8462317862125695218::1762687609::0::1::::<><><>0<>0<><>::
 killzone.tscn::PackedScene::5136532427050058035::1762687609::0::1::::<><><>0<>0<><>::uid://bexnm7amll3rc::::res://Scripts/killzone.gd
-NewCave.tscn::PackedScene::8462787283963522117::1762687609::0::1::::<><><>0<>0<><>::uid://bb7e7ixmlqq8o::::res://Assets/mainlev_build.png<>uid://b2ckonodde4vw::::res://Assets/Forest/Enviroment.png<>uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://bsv5yydv5swcw::::res://Scenes/frog.tscn<>uid://585hunlg4kry::::res://Scenes/Coin.tscn<>uid://cfq36nm0hbpe1::::res://Scenes/spring.tscn<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://dtmlxp6ytx32c::::res://Scenes/spring_with_pickup.tscn
+NewCave.tscn::PackedScene::8462787283963522117::1762690799::0::1::::<><><>0<>0<><>::uid://bb7e7ixmlqq8o::::res://Assets/mainlev_build.png<>uid://b2ckonodde4vw::::res://Assets/Forest/Enviroment.png<>uid://odp7eg33obbj::::res://Assets/Cave/cave_assets.png<>uid://bsv5yydv5swcw::::res://Scenes/frog.tscn<>uid://585hunlg4kry::::res://Scenes/Coin.tscn<>uid://dttdug71tmgod::::res://Scenes/playerWithSpring.tscn<>uid://dtmlxp6ytx32c::::res://Scenes/spring_with_pickup.tscn
 Pine.tscn::PackedScene::5337005211098430368::1762687609::0::1::::<><><>0<>0<><>::uid://bhecxxquxuulp::::res://Assets/Forest/Pine II - 60F.png
 player.tscn::PackedScene::7543890426024779057::1762687609::0::1::::<><><>0<>0<><>::uid://b6e12u3y3m4jt::::res://Assets/sprites/idle_animation_new.png<>uid://yvg11p0ul3d7::::res://Scripts/player.gd<>uid://d2ax2g4o4g6om::::res://Assets/sprites/walk_animation.png
 playerWithSpring.tscn::PackedScene::8532291490166484167::1762687609::0::1::::<><><>0<>0<><>::uid://dfqk1j0rn3y7b::::res://Scenes/player.tscn
 player_with_spring.gd::GDScript::7555669566833814076::1762687609::0::1::::<>CharacterBody2D<><>0<>0<><>::
 spring.tscn::PackedScene::5158571767536334838::1762687609::0::1::::<><><>0<>0<><>::uid://cudcba20hmahh::::res://node_2d.gd<>uid://cmaou7vokj8ob::::res://Assets/Sp.png
-spring_with_pickup.tscn::PackedScene::8518332410286846384::1762687609::0::1::::<><><>0<>0<><>::uid://p1bd3ujdjvjd::::res://spring_with_pickup.gd<>uid://cmaou7vokj8ob::::res://Assets/Sp.png
+spring_with_pickup.tscn::PackedScene::8518332410286846384::1762690808::0::1::::<><><>0<>0<><>::uid://p1bd3ujdjvjd::::res://spring_with_pickup.gd<>uid://cmaou7vokj8ob::::res://Assets/Sp.png
 switch.tscn::PackedScene::4763843507054940340::1762687609::0::1::::<><><>0<>0<><>::uid://dt4g7d86k4juk::::res://switch.gd<>uid://difqy0metuk1o::::res://icon.svg
-::res://Scripts/::1762687609
+::res://Scripts/::1762691020
 animatable_body_2d.gd::GDScript::3840003733683635150::1762687609::0::1::::<>AnimatableBody2D<><>0<>0<><>::
 area_2d.tscn::PackedScene::8633236526154717667::1762687609::0::1::::<><><>0<>0<><>::uid://cmaou7vokj8ob::::res://Assets/Sp.png
 coin.gd::GDScript::4969730896631782517::1762687609::0::1::::<>Node2D<><>0<>0<><>::
@@ -90,6 +90,6 @@ coin_animation.gd::GDScript::4379065814735845745::1762687609::0::1::::<>Animated
 Frog basic move.gd::GDScript::5229951555836610528::1762687609::0::1::::<>CharacterBody2D<><>0<>0<><>::
 FrogWithGravity.tscn::PackedScene::5899183010682369568::1762687609::0::1::::<><><>0<>0<><>::uid://7qrmmxq2ydp2::::res://Frog gravity move.gd<>uid://bsu1dwh037868::::res://Assets/Forest/Frog - 14F.png
 killzone.gd::GDScript::2715469178329022908::1762687609::0::1::::<>Area2D<><>0<>0<><>::
-player.gd::GDScript::1728296302688405742::1762687609::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::1728296302688405742::1762691020::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player_charge.gd::GDScript::7167428462134853279::1762687609::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Spring.tscn::PackedScene::8206982476764692530::1762687609::0::1::::<><><>0<>0<><>::uid://cudcba20hmahh::::res://node_2d.gd<>uid://dh7tw0u6ojp4j::::res://area_2d.gd<>uid://cmaou7vokj8ob::::res://Assets/Sp.png
