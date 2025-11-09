@@ -2957,7 +2957,9 @@ layer_4/tile_data = PackedInt32Array(-131072, 4194305, 0, -65536, 4194305, 1, 0,
 position = Vector2(8.999998, -15.999998)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerWithSpring"]
+position = Vector2(0.100000024, 0)
 limit_left = -400
+limit_bottom = 330
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-400, 0)
